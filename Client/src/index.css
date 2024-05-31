@@ -1,0 +1,25 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  @apply h-full;
+  margin: 0;
+  background-color: black; /* Tailwind's yellow-500 color */
+}
+
+.custom-prev-arrow,
+.custom-next-arrow {
+  @apply absolute z-10 cursor-pointer w-5 h-0;
+}
+
+.custom-prev-arrow {
+  @apply left-0 ml-0;
+}
+
+.custom-next-arrow {
+  @apply right-0 mr-0;
+}
