@@ -19,7 +19,7 @@ func main() {
 
 	// Use the route defined in the routes package
 	routes.SearchRoute(app)
-	// routes.GenreRoute(app)
+	routes.MiddleRoute(app)
 
 	// Start the Fiber app
 	err := app.Listen(":3000")
